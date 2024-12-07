@@ -6,10 +6,12 @@
                     <p class="text-slate-400 text-xl">HRMS © </p>
                 </div>
                 <div class=" flex-1 flex border gap-5 md:gap-3 justify-end ">
-                    <p>Support</p>
-                    <p>Help Center</p>
-                    <p>Privacy</p>
-                    <p>Terms</p>
+                    <p> <a href="">Support</a> </p>
+                    <p> <a href="">Help Center</a> </p>
+                   
+                    
+                    <p> <a href="">Privacy</a> </p>
+                    <router-link to="/">Terms</router-link>
                 </div>
             </div>
         </footer>

@@ -10,7 +10,7 @@ import Footeritem from './components/footeritem.vue';
 <template>
   <header>
     <div class="flex items-center justify-center">
-      <div class="flex border md:w-5/6 ">
+      <div class="flex border  lg:w-full ">
         <navsideitem />
 
 

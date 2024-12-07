@@ -20,46 +20,46 @@ import { HiArrowTrendingUp } from '@kalimahapps/vue-icons';
                 <HiSolidAdjustmentsVertical />
             </span>Daseboard</h1>
 
-        <div class="text-slate-400 space-y-2  py-4">
+        <div class="text-slate-400 hover:text-stone-500 space-y-2  py-4  ">
             <h1> User Manegement</h1>
-            <p class="flex  items-center gap-2 "> <span>
+            <p class="flex  items-center gap-2 hover:bg-gray-300 "> <span>
                     <AnOutlinedUser />
                 </span>Manege user</p>
-            <p class="flex  items-center gap-1 "><span class="text-2xl">
+            <p class="flex  items-center gap-1 hover:bg-gray-300 "><span class="text-2xl">
                     <CaUserSettings />
                 </span> User Settings</p>
         </div>
 
         <!-- next -->
-        <div class="text-slate-400 space-y-2  py-4">
+        <div class="text-slate-400 hover:text-stone-500 space-y-2  py-4">
             <h1> Employee Manegement</h1>
-            <p class="flex  items-center gap-2 "> <span>
+            <p class="flex  items-center gap-2 hover:bg-gray-300 "> <span>
                 <HiUserGroup/>
                 </span>Manege Employee</p>
-            <p class="flex  items-center gap-1 "><span class="text-2xl">
+            <p class="flex  items-center gap-1  hover:bg-gray-300"><span class="text-2xl">
                 <AnOutlinedUsergroupAdd/>
                 </span>Manege Departments</p>
-            <div class="flex items-center gap-2 ">
+            <div class="flex items-center gap-2  hover:bg-gray-300">
                 <div class="text-xl">
                     <FaRegFileLines/>
                 </div>
                 <div>
-                    <p>Manege Designation</p>
+                    <p class="">Manege Designation</p>
                 </div>
             </div>
         </div>
 
         <!-- attendence -->
 
-        <div class="text-slate-400 space-y-2  py-4">
+        <div class="text-slate-400  hover:text-stone-500 space-y-2  py-4">
             <h1> Attendence</h1>
-            <p class="flex  items-center gap-2 "> <span>
+            <p class="flex  items-center gap-2 hover:bg-gray-300 "> <span>
                 <BxTimeFive/>
                 </span>Schedule</p>
-            <p class="flex  items-center gap-2 "><span class="">
+            <p class="flex  items-center gap-2  hover:bg-gray-300"><span class="">
                 <BsCalendar3/>
                 </span>Daily Attendence</p>
-            <div class="flex items-center gap-3 ">
+            <div class="flex items-center gap-3 hover:bg-gray-300 ">
                 <div class="">
                     <BsCalendar4/>
                 </div>
