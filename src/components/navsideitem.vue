@@ -16,12 +16,16 @@ import { HiArrowTrendingUp } from '@kalimahapps/vue-icons';
 <template>
     <div class=" bg-slate-600 w-72  min-h-fit p-3 hidden md:block ">
         <h1 class="text-2xl text-slate-200 pb-3 ">HRMS</h1>
-        <h1 class="text-base text-slate-400 flex gap-3 items-center
+
+        <router-link to="/">
+            <h1 class="text-base text-slate-400 flex gap-3 items-center
          hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2 
         "> <span>
-                <HiSolidAdjustmentsVertical />
-            </span class="">Daseboard</h1>
-
+                    <HiSolidAdjustmentsVertical />
+                </span class="">Daseboard
+            </h1>
+        </router-link>
+        
         <div class="text-slate-400  space-y-2  py-4  ">
 
             <h1> User Manegement</h1>
