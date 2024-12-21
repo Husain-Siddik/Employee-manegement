@@ -16,32 +16,58 @@ import { HiArrowTrendingUp } from '@kalimahapps/vue-icons';
 <template>
     <div class=" bg-slate-600 w-72  min-h-fit p-3 hidden md:block ">
         <h1 class="text-2xl text-slate-200 pb-3 ">HRMS</h1>
-        <h1 class="text-base text-slate-400 flex gap-3 items-center "> <span>
+        <h1 class="text-base text-slate-400 flex gap-3 items-center
+         hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2 
+        "> <span>
                 <HiSolidAdjustmentsVertical />
-            </span>Daseboard</h1>
+            </span class="">Daseboard</h1>
 
-        <div class="text-slate-400 hover:text-stone-500 space-y-2  py-4  ">
+        <div class="text-slate-400  space-y-2  py-4  ">
+
             <h1> User Manegement</h1>
-            <p class="flex  items-center gap-2 hover:bg-gray-300 "> <span>
-                    <AnOutlinedUser />
-                </span>Manege user</p>
-            <p class="flex  items-center gap-1 hover:bg-gray-300 "><span class="text-2xl">
+
+            <router-link to="/manegeUser">
+                <p
+                    class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2  ">
+                    <span>
+                        <AnOutlinedUser />
+
+                    </span>Manege user
+                </p>
+            </router-link>
+
+
+            <p
+                class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2 ">
+                <span class="text-2xl">
                     <CaUserSettings />
-                </span> User Settings</p>
+                </span> User Settings
+            </p>
         </div>
 
         <!-- next -->
-        <div class="text-slate-400 hover:text-stone-500 space-y-2  py-4">
+        <div class="text-slate-400  space-y-2  py-4">
             <h1> Employee Manegement</h1>
-            <p class="flex  items-center gap-2 hover:bg-gray-300 "> <span>
-                <HiUserGroup/>
-                </span>Manege Employee</p>
-            <p class="flex  items-center gap-1  hover:bg-gray-300"><span class="text-2xl">
-                <AnOutlinedUsergroupAdd/>
-                </span>Manege Departments</p>
-            <div class="flex items-center gap-2  hover:bg-gray-300">
+
+            <router-link to="/manegeEmployee">
+                <p
+                    class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2 ">
+                    <span>
+                        <HiUserGroup />
+                    </span>Manege Employee
+                </p>
+            </router-link>
+
+            <p
+                class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-lg hover:rounded-md  hover:pl-2">
+                <span class="text-2xl">
+                    <AnOutlinedUsergroupAdd />
+                </span>Manege Departments
+            </p>
+            <div
+                class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2">
                 <div class="text-xl">
-                    <FaRegFileLines/>
+                    <FaRegFileLines />
                 </div>
                 <div>
                     <p class="">Manege Designation</p>
@@ -51,17 +77,28 @@ import { HiArrowTrendingUp } from '@kalimahapps/vue-icons';
 
         <!-- attendence -->
 
-        <div class="text-slate-400  hover:text-stone-500 space-y-2  py-4">
+        <div class="text-slate-400  space-y-2  py-4">
             <h1> Attendence</h1>
-            <p class="flex  items-center gap-2 hover:bg-gray-300 "> <span>
-                <BxTimeFive/>
-                </span>Schedule</p>
-            <p class="flex  items-center gap-2  hover:bg-gray-300"><span class="">
-                <BsCalendar3/>
-                </span>Daily Attendence</p>
-            <div class="flex items-center gap-3 hover:bg-gray-300 ">
+
+            <router-link to="/manegeschedule">
+                <p
+                    class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2 ">
+                    <span>
+                        <BxTimeFive />
+                    </span>Schedule
+                </p>
+            </router-link>
+
+            <p
+                class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2">
+                <span class="">
+                    <BsCalendar3 />
+                </span>Daily Attendence
+            </p>
+            <div
+                class="flex  items-center gap-2 hover:bg-[#E7E7E7] hover:text-black hover:text-xl hover:rounded-md  hover:pl-2">
                 <div class="">
-                    <BsCalendar4/>
+                    <BsCalendar4 />
                 </div>
                 <div>
                     <p>
@@ -70,14 +107,14 @@ import { HiArrowTrendingUp } from '@kalimahapps/vue-icons';
                 </div>
             </div>
         </div>
-<!--  leave manegement -->
-         <h1 class="text-base text-slate-400  items-center  pb-4 "> <span>
+        <!--  leave manegement -->
+        <h1 class="text-base text-slate-400  items-center  pb-4 "> <span>
                 <!-- <HiSolidAdjustmentsVertical /> -->
             </span>Leave Manegement</h1>
 
         <div class="flex text-slate-400 items-center  gap-2">
             <div>
-                <HiArrowTrendingUp/>
+                <HiArrowTrendingUp />
             </div>
             <div>
                 Manage Leave
